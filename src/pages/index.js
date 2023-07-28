@@ -1,8 +1,11 @@
+import Featured from "src/components/Featured";
+import Hero from "src/components/Hero";
 
 export default function Home() {
   return (
     <div>
-      Home
+      <Hero/>
+      <Featured/>
     </div>
   )
 }

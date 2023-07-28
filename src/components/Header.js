@@ -15,7 +15,7 @@ const Header = () => {
             <ShoppingCartIcon className="w-7 h-7 flex-shrink-0" />
           </div>
           <p className="text-lg">
-            $0.00
+            $0.00 {' '}
             <span className="text-sm text-gray-500">(0)</span>
           </p>
         </Link>
