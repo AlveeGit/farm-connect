@@ -21,7 +21,7 @@ const Header = () => {
             <div className=" flex flex-col md:flex-row gap-2 ">
               <Link href="/catagory">Catagory</Link>
               <Link href="/contact">Contact</Link>
-              <Link href="/user">
+              <Link href="/profile">
                 <PersonIcon className="w-7 h-7" />
               </Link>
 
