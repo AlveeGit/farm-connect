@@ -4,7 +4,7 @@ import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
 
 const ProductCard = ({ product }) => {
   return (
-    <div className="w-1/4 h-full bg-cyan-600 rounded-lg p-3 place-self-center grid">
+    <div className="relative w-full bg-cyan-600 rounded-lg p-3 place-self-center grid ">
       <Image
         src={`${product.images[0]}`}
         alt="logo"
@@ -12,17 +12,11 @@ const ProductCard = ({ product }) => {
         height={150}
         className="mx-auto rounded-lg"
       />
-      <div>{product.title}</div>
-      <Button
-        sx={{
-          color: "white",
-          backgroundColor: "black",
-        }}
-        variant="contained"
-        endIcon={<ShoppingCartCheckoutIcon />}
-      >
+      <div className="h-28 mx-auto font-bold mt-5">{product.title}</div>
+      <button className="w-full absolute flex  bottom-0 items-center justify-between bg-black text-white p-2 rounded-lg ">
         <p className="text-sm">Add to Cart</p>
-      </Button>
+        <ShoppingCartCheckoutIcon />
+      </button>
     </div>
   );
 };
