@@ -11,6 +11,7 @@ const Featured = () => {
       );
       const data = await res.json();
       setProducts(data.products);
+      console.log(data.products);
     };
     getData();
   }, []);

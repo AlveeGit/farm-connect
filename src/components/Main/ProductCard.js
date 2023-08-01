@@ -6,7 +6,7 @@ const ProductCard = ({ product }) => {
   return (
     <div className="relative w-full bg-cyan-600 rounded-lg p-3 place-self-center grid ">
       <Image
-        src={`${product.images[0]}`}
+        src={`${product.images[1]}`}
         alt="logo"
         width={150}
         height={150}

@@ -2,7 +2,7 @@ import Image from "next/image";
 import SearchIcon from "@mui/icons-material/Search";
 const Hero = () => {
   return (
-    <div className="bg-[#9b9a9a]">
+    <div className="bg-[url('/images/black-bg2.jpg')]">
       <div className="pt-5 flex content-around">
         <input
           type="text"
@@ -24,7 +24,7 @@ const Hero = () => {
 
         <div className=" w-1/2 m-2 grid place-self-center">
           <Image
-            src="/assets/hero-veg.png"
+            src="/images/hero-veg.png"
             alt="logo"
             width={250}
             height={250}

@@ -1,4 +1,4 @@
-import "../components/Customization/UserStyle.module.css";
+import styles from "../components/UserStyle.module.css";
 import Input from "src/components/Common/Input";
 
 const inputInfo = [
@@ -26,24 +26,24 @@ const profile = () => {
   return (
     <div className="bg-gradient-to-b from-[#100D2A] to-[#24243E] h-screen ">
       outer
-      <div className="bg-gradient-to-b from-[#1F1B45] to-[#2B2855] h-3/5 w-3/5 mx-auto mt-32 shadow-xl shadow-indigo-500/40">
+      <div className="bg-gradient-to-b from-[#1F1B45] to-[#2B2855] h-3/5 w-4/5 mx-auto mt-32 shadow-xl shadow-indigo-500/40">
         <h1 className="text-4xl text-white font-bold text-center p-5">
           Sign Up
         </h1>
-        <div className="">
+
+        <div className=" flex flex-col w-full place-items-center ">
           {inputInfo.map((info) => (
-            <div className=" flex flex-col w-full place-items-center ">
-              <Input key={info.id} info={info} />
-            </div>
+            <Input key={info.id} info={info} />
           ))}
         </div>
+
         <button className="bg-black text-white p-2 rounded-lg ">Submit</button>
-        <div className="login">
-          <h1 className="text-4xl text-white font-bold text-center p-5">
+
+        <div id="loginSection" className={styles.loginSec}>
+          <p className="text-4xl text-white font-bold text-center p-5">
             Log In
-          </h1>
+          </p>
         </div>
-        <button>Log in</button>
       </div>
     </div>
   );
