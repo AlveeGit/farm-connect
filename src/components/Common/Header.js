@@ -12,17 +12,17 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    <header className="sticky top-0 bg-white z-10 shadow">
+    <header className="sticky top-0 bg-gray-300 z-10 shadow">
       <div className="container flex items-center justify-between p-6 ">
-        <Logo className="justify-start"/>
+        <Logo className="justify-start" />
 
         <div className="justify-items-end flex">
           {isMenuOpen && (
             <div className=" flex flex-col md:flex-row gap-2 ">
-              <Link href="/catagory">Catagory</Link>
+              <Link href="/category">Category</Link>
               <Link href="/contact">Contact</Link>
               <Link href="/profile">
-                <PersonIcon className="w-7 h-7" />
+                <PersonIcon className="w-7 h-7" /> Profile
               </Link>
 
               <Link

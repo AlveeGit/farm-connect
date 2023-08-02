@@ -1,7 +1,0 @@
-.loginSec {
-  height: 400px;
-  background: gainsboro;
-  border-radius: 60% / 10%;
-  transform: translateY(-350px);
-  transition: 0.8s ease-in-out;
-}

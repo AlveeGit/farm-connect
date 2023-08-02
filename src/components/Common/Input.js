@@ -4,7 +4,7 @@ const Input = ({info}) => {
         type={info.type}
         placeholder={info.placeholder}
         required
-        className="w-4/5 p-7 rounded-xl bg-gray-200"
+        className="w-4/5 p-5 rounded-xl bg-gray-200 border-solid border-sky-600"
 
       />
    

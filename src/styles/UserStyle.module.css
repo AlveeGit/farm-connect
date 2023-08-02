@@ -1,0 +1,14 @@
+.loginSec {
+  height: 430px;
+  background: rgb(253, 237, 237);
+  border-radius: 60% / 10%;
+  transform: translateY(-50px);
+  transition: 0.8s ease-in-out;
+}
+#chk:checked ~ .loginSec {
+  transform: translateY(-330px);
+}
+
+#chk {
+  display: none;
+}
