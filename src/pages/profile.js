@@ -6,15 +6,14 @@ import { inputInfo } from "src/components/Data/InputField";
 const profile = () => {
   return (
     <div className="bg-gradient-to-b from-[#100D2A] to-[#24243E] h-screen flex  items-center">
-      <div className="  bg-gradient-to-b from-[#1F1B45] to-[#2B2855] h-[450px] w-[400px] mx-auto shadow-xl shadow-indigo-500/40 overflow-hidden border rounded-lg ">
-        <input type="checkbox" id={styles.chk} aria-hidden="true" />
+      <div className="  bg-gradient-to-b from-[#13087b] to-[#000000] h-[450px] w-[400px] mx-auto shadow-xl shadow-indigo-500/40 overflow-hidden border rounded-lg ">
+        <input type="checkbox" id={styles.chk} />
 
         <div className="relative">
           <form>
             <label
               for={styles.chk}
-              aria-hidden="true"
-              className="text-3xl text-white font-bold text-center m-10"
+              className="text-3xl text-white font-bold m-10 flex cursor-pointer justify-center"
             >
               Sign Up
             </label>
@@ -35,8 +34,7 @@ const profile = () => {
           <form>
             <label
               for={styles.chk}
-              aria-hidden="true"
-              className="text-3xl text-black font-bold text-center p-5"
+              className="text-3xl text-black font-bold  p-5 flex cursor-pointer justify-center"
             >
               Log In
             </label>

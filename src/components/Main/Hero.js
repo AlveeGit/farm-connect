@@ -6,11 +6,11 @@ const Hero = () => {
       <div className="pt-5 flex content-around">
         <input
           type="text"
-          className="bg-[#ffffffe1]   w-4/5  p-5"
+          className="bg-[#ffffffe1] rounded-3xl  w-4/5  p-5"
           placeholder="Search"
         />
         <button className="bg-[#ffffffe1] w-1/12   place-items-center">
-          <SearchIcon className="w-7 h-7 text-black" />
+          <SearchIcon className="w-7 h-7 bg-white  text-black" />
         </button>
       </div>
 

@@ -15,12 +15,14 @@ const CategoryComp = () => {
 
   console.log(products);
   return (
-    <div>
-      <h1 className=" font-bold text-3xl p-3 font">Category</h1>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 h-full gap-2 ">
-        {products.map((product) => (
-          <CategoryCard product={product} key={product.id} />
-        ))}
+    <div className="h-screen">
+      <div>
+        <h1 className=" font-bold text-3xl p-3 font">Category</h1>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 h-full gap-2 ">
+          {products.map((product) => (
+            <CategoryCard product={product} key={product.id} />
+          ))}
+        </div>
       </div>
     </div>
   );

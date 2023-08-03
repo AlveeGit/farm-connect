@@ -3,7 +3,7 @@ import { inputInfo } from "src/components/Data/InputField";
 
 const contact = () => {
   return (
-    <div className="container bg-gray-400 p-32">
+    <div className="container h-screen bg-gray-400 p-32">
       <div className="row">
         <h1 className="text-center text-5xl p-3 font">Contact us</h1>
       </div>

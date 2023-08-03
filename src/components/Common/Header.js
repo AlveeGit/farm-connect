@@ -7,18 +7,19 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useState } from "react";
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
     <header className="sticky top-0 bg-gray-300 z-10 shadow">
-      <div className="container flex items-center justify-between p-6 ">
+      <div className="container flex items-center justify-between p-6 relative">
         <Logo className="justify-start" />
 
-        <div className="justify-items-end flex">
+        <div className="justify-items-end flex z-20 absolute right-20 md:top-9 top-0">
           {isMenuOpen && (
-            <div className=" flex flex-col md:flex-row gap-2 ">
+            <div className=" bg-slate-200 flex flex-col md:flex-row gap-2  ">
+              <Link href="/">Home</Link>
               <Link href="/category">Category</Link>
               <Link href="/contact">Contact</Link>
               <Link href="/profile">
@@ -38,9 +39,9 @@ const Header = () => {
               </Link>
             </div>
           )}
-          <div className="w-7 h-7  block" onClick={toggleMenu}>
-            {isMenuOpen ? <CloseIcon /> : <MenuOpenIcon />}
-          </div>
+        </div>
+        <div className="w-7 h-7  block" onClick={toggleMenu}>
+          {isMenuOpen ? <CloseIcon /> : <MenuOpenIcon />}
         </div>
       </div>
     </header>
