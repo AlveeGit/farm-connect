@@ -16,9 +16,9 @@ const Header = () => {
       <div className="container flex items-center justify-between p-6 relative">
         <Logo className="justify-start" />
 
-        <div className="justify-items-end flex z-20 absolute right-20 md:top-9 top-0">
+        <div className="justify-items-end flex z-20 ">
           {isMenuOpen && (
-            <div className=" bg-slate-200 flex flex-col md:flex-row gap-2  ">
+            <div className=" flex flex-col md:flex-row gap-1 p-2 ">
               <Link href="/">Home</Link>
               <Link href="/category">Category</Link>
               <Link href="/contact">Contact</Link>

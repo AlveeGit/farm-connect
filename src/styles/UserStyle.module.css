@@ -2,11 +2,11 @@
   height: 430px;
   background: rgb(246, 244, 244);
   border-radius: 60% / 10%;
-  transform: translateY(-50px);
+  transform: translateY(20px);
   transition: 0.8s ease-in-out;
 }
 #chk:checked ~ .loginSec {
-  transform: translateY(-330px);
+  transform: translateY(-270px);
 }
 
 #chk {

@@ -6,7 +6,7 @@ import { inputInfo } from "src/components/Data/InputField";
 const profile = () => {
   return (
     <div className="bg-gradient-to-b from-[#100D2A] to-[#24243E] h-screen flex  items-center">
-      <div className="  bg-gradient-to-b from-[#13087b] to-[#000000] h-[450px] w-[400px] mx-auto shadow-xl shadow-indigo-500/40 overflow-hidden border rounded-lg ">
+      <div className="  bg-gradient-to-b from-[#0a0066] to-[#000000] h-[450px] w-[400px] mx-auto shadow-xl shadow-indigo-500/40 overflow-hidden border rounded-lg ">
         <input type="checkbox" id={styles.chk} />
 
         <div className="relative">
