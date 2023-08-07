@@ -4,7 +4,7 @@ import ShoppingCartCheckoutIcon from "@mui/icons-material/ShoppingCartCheckout";
 
 const ProductCard = ({ product }) => {
   return (
-    <div className="relative w-full bg-cyan-600 rounded-lg p-3 place-self-center grid ">
+    <div className="relative w-full bg-gray-400 rounded-lg p-3 place-self-center grid ">
       <Image
         src={`${product.images[0]}`}
         alt="logo"

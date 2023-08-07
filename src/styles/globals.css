@@ -20,7 +20,7 @@ button {
   width: 60%;
   height: 40px;
   display: block;
-  background: linear-gradient(45deg, #006488, #030e8d);
+  background: linear-gradient(45deg, #00526f, #010a74);
   font-weight: bold;
   transition: 1s ease-in-out;
   cursor: pointer;
@@ -28,6 +28,6 @@ button {
   border-radius: 0.5rem;
 }
 button:hover {
-  background: linear-gradient(45deg, #010376, #1868c8);
+  background: linear-gradient(45deg, #010376, #012e64);
 }
 

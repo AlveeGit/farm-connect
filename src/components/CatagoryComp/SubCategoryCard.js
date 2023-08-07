@@ -5,7 +5,7 @@ import Link from "next/link";
 const SubCategoryCard = ({ product }) => {
   console.log(product);
   return (
-    <div className="relative w-full h-[260px] bg-cyan-200 rounded-lg p-3 flex flex-col  ">
+    <div className="relative w-full h-[260px] bg-gray-200 rounded-lg p-3 flex flex-col  ">
       <div className="w-[150px] h-[150px] justify-center flex mx-auto ">
         <Image
           src={`${product.images[0]}`}
@@ -35,4 +35,4 @@ const SubCategoryCard = ({ product }) => {
     </div>
   );
 };
-export default SubCategoryCard
+export default SubCategoryCard;
